@@ -25,6 +25,8 @@ steps:
       $ANDROID_HOME/platform-tools/adb devices
       
       echo "Emulator started"
+       
+  timeoutInMinutes: 5
 - task: Gradle@3
   inputs:
     workingDirectory: '$ANDROID_HOME'
