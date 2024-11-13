@@ -4,8 +4,8 @@ pool:
 steps:
 - task: Gradle@3
   inputs:
-    workingDirectory: '$ANDROID_HOME'
-    gradleWrapperFile: '$ANDROID_HOME'
+    workingDirectory: 'gradlew'
+    gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
